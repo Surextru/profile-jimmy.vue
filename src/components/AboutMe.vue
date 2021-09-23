@@ -1,18 +1,22 @@
 <template>
-  <div>
+  <div class="aboutme">
     <h2>{{ name }}</h2>
-    <h2>{{ position }}</h2>
+    <h3>{{ position }}</h3>
+    <div class="image">
+      <img src="" alt="iamge" />
+    </div>
   </div>
 </template>
 
 <script>
-import {aboutme} from "../data"
+import { aboutme } from "../data";
 export default {
   data() {
+    const { name, position, image } = aboutme;
     return {
-      name: aboutme.name,
-      position: aboutme.position
-
+      name: name,
+      position: position,
+      image: image,
     };
   },
 };

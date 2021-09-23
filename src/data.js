@@ -1,7 +1,7 @@
 export const aboutme = {
     name: "jaime",
     position: "web developer",
-    image: ""
+    image: "image route"
 };
 export const skills = [
   {
